@@ -18,7 +18,7 @@ public final class Constants {
 	public static final int RIGHT_FRONT = 1;
 	public static final int LEFT_BACK = 4;
     public static final int RIGHT_BACK = 2;
-    
+
     public static final boolean CLOCKWISE = false;
     public static final boolean COUNTERCLOCKWISE = true;
 
@@ -27,10 +27,27 @@ public final class Constants {
 
     public static final double DRIVETRAINSPEED = 0.7;
 
+    public static final double kIntakeSpeed = -0.4;
+    public static final double kOuttakeSpeed = 0.5;
+    public static final int kStop = 0;
+
+    public static final double kLiftArmSpeed = 0.15;
+    public static final double kLowerArmSpeed = -0.05;
+    //public static final double stopArm = 0;
+
     public static final int JOYSTICK_NUMBER = 0;
 
     public static final int kLeftX = 2;
     public static final int kRightX = 4;
     public static final int kLeftY = 1;
     public static final int kRightY = 5;
+
+    public static final int kIntakePort = 6;
+
+    public static final int kArmPort = 5;
+
+    public static final boolean kRollerInvert = false;
+
+    public static final boolean kArmInvert = true;
+	public static final String IntakeConstants = null;
 }
