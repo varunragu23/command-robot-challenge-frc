@@ -5,20 +5,13 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
-import edu.wpi.first.wpilibj2.command.Subsystem;
 import frc.robot.Constants;
 
 import frc.robot.RobotContainer;
-import frc.robot.subsystems.Arm;
 import frc.robot.subsystems.DriveTrain;
-import frc.robot.subsystems.Intake;
 
 public class DriveWithJoystick<Outtake> extends CommandBase {
   private final DriveTrain driveTrain;
-  private final Intake intake;
-  private final Outtake outtake;
-  private final LiftArm liftArm;
-  private final LowerArm lowerArm;
 
   /**
    * Creates a new DriveWithJoysticks.
@@ -28,32 +21,6 @@ public class DriveWithJoystick<Outtake> extends CommandBase {
     driveTrain = dt;
     addRequirements(driveTrain);
   }
-
-  public DriveWithJoystick(Intake it) {
-    intake = it;
-    addRequirements(intake);
-  }
-
-  public DriveWithJoystick(Outtake ot) {
-    outtake = ot;
-    addRequirements(outtake);
-  }
-
-  public DriveWithJoystick(stopIntake si) { //not sure how to configure the stop intake button
-    stopIntake = si;
-    addRequirements(stopIntake);
-  }
-
-  public DriveWithJoystick(liftArm lia) {
-    liftArm = lia;
-    addRequirements(liftArm);
-  }
-
-  public DriveWithJoystick(lowerArm loa) {
-    lowerArm = loa;
-    addRequirements(lowerArm);
-  }
-
 
 
   // Called when the command is initially scheduled.
@@ -65,12 +32,6 @@ public class DriveWithJoystick<Outtake> extends CommandBase {
   @Override
   public void execute() {
     driveTrain.driveWithJoysticks(RobotContainer.driverJoystick, Constants.DRIVETRAINSPEED);
-    intake.driveWithJoysticks(RobotContainer.driverJoystick, Constants.kIntakeSpeed);
-    intake.driveWithJoysticks(RobotContainer.driverJoystick, Constants.kOuttakeSpeed);
-    intake.driveWithJoysticks(RobotContainer.driverJoystick, Constants.kStop);
-    arm.driveWithJoysticks(RobotContainer.driverJoystick, Constants.kLiftArmSpeed);
-    arm.driveWithJoysticks(RobotContainer.driverJoystick, Constants.kLowerArmSpeed);
-  }
   }
 
   // Called once the command ends or is interrupted.
