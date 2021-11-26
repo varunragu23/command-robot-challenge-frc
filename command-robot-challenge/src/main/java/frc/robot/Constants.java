@@ -25,15 +25,18 @@ public final class Constants {
     public static final int XBOX_LEFT_X_AXIS = 0;
     public static final int XBOX_LEFT_Y_AXIS = 1;
 
-    public static final double DRIVETRAINSPEED = 0.7;
+    public static final double DRIVETRAINSPEED = 0.3;
 
-    public static final double kIntakeSpeed = -0.4;
-    public static final double kOuttakeSpeed = 0.5;
+    public static final double kIntakeSpeed = -0.2;
+    public static final double kOuttakeSpeed = 0.3;
     public static final int kStop = 0;
 
     public static final double kLiftArmSpeed = 0.15;
     public static final double kLowerArmSpeed = -0.05;
     //public static final double stopArm = 0;
+
+    public static final double kLiftClimberSpeed = 0.15;
+    public static final double kLowerClimberSpeed = -0.05;
 
     public static final int JOYSTICK_NUMBER = 0;
 
@@ -46,8 +49,23 @@ public final class Constants {
 
     public static final int kArmPort = 5;
 
+    public static final int kClimberPort = 10; // not finalized need to double check on "REV SPARK MAX Client"
+
     public static final boolean kRollerInvert = false;
 
     public static final boolean kArmInvert = true;
 	public static final String IntakeConstants = null;
+    public static final boolean kClimberInvert = false;
+
+    public static final int kIntakeBumper = 5;
+    public static final int kOuttakeBumper = 6;
+    public static final int kLiftArmBumper = 3;
+    public static final int kLowerArmBumper = 4;
+
+    public static final int kStopIntakeBumper = 7;
+    public static final int kLiftClimberBumper = 8;
+    public static final int kLowerClimberBumper = 9;
+    public static final int kStopClimberBumper = 10;
+    public static final int kStopArmBumper = 11;
+
 }
