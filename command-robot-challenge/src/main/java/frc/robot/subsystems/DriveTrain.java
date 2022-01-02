@@ -11,9 +11,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-
-
-
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Constants;
 
 
@@ -53,8 +51,8 @@ public class DriveTrain extends SubsystemBase {
 
     falconLeftFront.setInverted(Constants.COUNTERCLOCKWISE);
     falconLeftBack.setInverted(Constants.COUNTERCLOCKWISE);
-    falconRightFront.setInverted(Constants.CLOCKWISE);
-    falconRightBack.setInverted(Constants.CLOCKWISE);
+    falconRightFront.setInverted(Constants.COUNTERCLOCKWISE);
+    falconRightBack.setInverted(Constants.COUNTERCLOCKWISE);
 
   }
 

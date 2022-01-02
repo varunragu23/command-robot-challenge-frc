@@ -31,7 +31,7 @@ public final class Constants {
     public static final double kOuttakeSpeed = 0.3;
     public static final int kStop = 0;
 
-    public static final double kLiftArmSpeed = 0.15;
+    public static final double kLiftArmSpeed = 0.1;
     public static final double kLowerArmSpeed = -0.05;
     //public static final double stopArm = 0;
 
@@ -49,13 +49,13 @@ public final class Constants {
 
     public static final int kArmPort = 5;
 
-    public static final int kClimberPort = 10; // not finalized need to double check on "REV SPARK MAX Client"
+    public static final int kClimberPort = 14; // not finalized need to double check on "REV SPARK MAX Client" - finalized
 
     public static final boolean kRollerInvert = false;
 
     public static final boolean kArmInvert = true;
 	public static final String IntakeConstants = null;
-    public static final boolean kClimberInvert = false;
+    public static final boolean kClimberInvert = true;
 
     public static final int kIntakeBumper = 5;
     public static final int kOuttakeBumper = 6;
